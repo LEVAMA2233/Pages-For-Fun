@@ -1,3 +1,4 @@
+
 const generaMatriz = (n) => {
     // Inicializamos la matriz vacía pero con las filas ya creadas
     let tabla = [];
@@ -24,6 +25,8 @@ const generaMatriz = (n) => {
 }   
 
 const dibujarMatriz = (matriz) => {
+    
+    const contenedor = document.getElementById('contenedorMatriz');
     contenedor.innerHTML = ''; // Limpia cualquier tabla generada previamente
     const tablaNgoro = document.createElement('table');
     

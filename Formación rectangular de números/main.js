@@ -1,12 +1,11 @@
-import {matrizLlena} from "./tablaNgoro"
-import { dibujarMatriz } from "./tablaNgoro";
+import {generaMatriz} from "./tablaNgoro.js"
+import { dibujarMatriz } from "./tablaNgoro.js";
 
-
-
-
+const botonCrearMatriz = document.getElementById('btnCrear');
 const inputFilas = document.getElementById('n');
 const contenedor = document.getElementById('contenedorMatriz');
-const botonCrearMatriz = document.getElementById('btnCrear');
+
+
 
 botonCrearMatriz.addEventListener('click', function() {
     const n = Number(inputFilas.value);
