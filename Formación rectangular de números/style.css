@@ -1,6 +1,26 @@
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:darkgoldenrod;
+}
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: #EFEFEF;
+    opacity: 0.98;
+}
+
+/*
+Se vale la asignación multiple, h1,h2,h3{property: "value";}
+*/
+
+p{
+    font-family:'Courier New', Courier, monospace;
+    color:darkslategray;
+}
 
 .Tabla-N-Goro
 {
     border-collapse: collapse;
+    
 }
