@@ -1,0 +1,18 @@
+header{
+    background-color: rgb(38,41,58);
+}
+
+h1,h4,h5{
+    color:whitesmoke;
+    text-align: center;
+}
+
+.navbar{
+    background-color:rgb(165, 108, 219) !important;
+}
+
+body{
+    background-image: url("./Public/img/FondoBosque.jpg");
+    background-size: cover;
+    background-attachment: scroll; /*Quiero que la imagen se mueva al hacer scroll, posiblemente mostrar otra conforme se scrollee*/
+}
