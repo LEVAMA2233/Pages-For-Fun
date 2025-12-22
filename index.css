@@ -1,5 +1,6 @@
 :root{
     --pading:25px;
+    --extreme-padding:200px;
 }
 
 header{
@@ -17,9 +18,11 @@ h1,h4,h5{
 .navbar{
     background-color:rgb(165, 108, 219) !important;
     opacity: 88%;
+    /*padding-bottom: var(--extreme-padding);*/
 }.mi-navbar{
     box-shadow:  -10px -10px 15px #616064,
              10px 10px 35px #616064;
+             z-index: 1069;
 }
 
 body{
@@ -42,6 +45,8 @@ img{
     background: linear-gradient(315deg, #5f3f65, #503555);
     box-shadow:  -20px -20px 35px #432686,
              20px 11px 35px #432686;
+}.mi-foto{
+    align-items: center;
 }
 
 .contenedor-principal {
