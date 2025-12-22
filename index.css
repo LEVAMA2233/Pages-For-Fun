@@ -4,6 +4,9 @@
 
 header{
     background-color: rgb(38,41,58);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+    opacity: 88%;
 }
 
 h1,h4,h5{
@@ -13,6 +16,10 @@ h1,h4,h5{
 
 .navbar{
     background-color:rgb(165, 108, 219) !important;
+    opacity: 88%;
+}.mi-navbar{
+    box-shadow:  -10px -10px 15px #616064,
+             10px 10px 35px #616064;
 }
 
 body{
@@ -28,9 +35,13 @@ img{
 
 .img-fluid{
     
-    max-width: 250px; /* Ajusta este valor (300px, 200px, etc.) hasta que te guste */
+    max-width: 350px; /* Ajusta este valor (300px, 200px, etc.) hasta que te guste */
     height: auto;      /* Mantiene la proporción para que no se vea estirada */
-    border-radius: 10px;
+    opacity: 95.6%;
+    border-radius: 69px;
+    background: linear-gradient(315deg, #5f3f65, #503555);
+    box-shadow:  -20px -20px 35px #432686,
+             20px 11px 35px #432686;
 }
 
 .contenedor-principal {
@@ -39,7 +50,6 @@ img{
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
                 -15px -15px 30px rgb(60, 60, 60);
     overflow: hidden;
-    padding-top: var(--pading);
     opacity: 80%;
 }
    
