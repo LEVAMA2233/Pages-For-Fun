@@ -1,3 +1,7 @@
+:root{
+    --pading:25px;
+}
+
 header{
     background-color: rgb(38,41,58);
 }
@@ -15,4 +19,18 @@ body{
     background-image: url("./Public/img/FondoBosque.jpg");
     background-size: cover;
     background-attachment: scroll; /*Quiero que la imagen se mueva al hacer scroll, posiblemente mostrar otra conforme se scrollee*/
+}
+
+.contenedor-principal {
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+    overflow: hidden;
+    padding-top: var(--pading);
+    opacity: 80%;
+}
+   
+p{
+    color: antiquewhite;
 }
