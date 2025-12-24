@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita barras de desplazamiento */
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* La barra de herramientas flotante */
+#toolbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 100; /* Asegura que esté por encima del canvas */
+}
+
+/* El lienzo donde dibujaremos */
+canvas {
+    display: block;
+    background-color: white;
+    cursor: crosshair; /* Cambia el cursor a una cruz */
+}
+
+/* Estilos bonitos para los controles */
+label { font-size: 14px; color: #333; }
+button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover { background-color: #e84118; }
