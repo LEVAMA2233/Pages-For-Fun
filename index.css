@@ -22,7 +22,7 @@ h1,h4,h5{
 }.mi-navbar{
     box-shadow:  -10px -10px 15px #616064,
              10px 10px 35px #616064;
-             z-index: 1069;
+             z-index: 1069;/*Con esto podemos sobreponer cada elemento en profundidad (Eje Z)*/
 }
 
 body{
