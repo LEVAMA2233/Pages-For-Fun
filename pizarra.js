@@ -88,8 +88,3 @@ btnLimpiar.addEventListener('click', () => {
 });
 
 
-/*
-//Botón de Goma
-btnGoma.addEventListener(`click`, () => {
-    ctx.
-});*/
