@@ -3,7 +3,7 @@ body {
     padding: 0;
     overflow: hidden; /* Evita barras de desplazamiento */
     font-family: sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
 /* La barra de herramientas flotante */
@@ -25,7 +25,7 @@ body {
 /* El lienzo donde dibujaremos */
 canvas {
     display: block;
-    background-color: white;
+    background-color: rgb(211, 78, 78);
     cursor: crosshair; /* Cambia el cursor a una cruz */
 }
 
