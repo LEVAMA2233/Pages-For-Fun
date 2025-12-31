@@ -1,6 +1,7 @@
 :root{
     --pading:25px;
     --extreme-padding:200px;
+    --navbar-color:rgb(165, 108, 219);
 }
 
 header{
@@ -36,17 +37,14 @@ img{
     border-style: none;
 }
 
-.img-fluid{
-    
-    max-width: 350px; /* Ajusta este valor (300px, 200px, etc.) hasta que te guste */
-    height: auto;      /* Mantiene la proporción para que no se vea estirada */
+.img-fluid {
+    width: 100%; /* Ocupa el ancho de su columna */
+    max-width: 350px; /* Pero no pases de 350px */
+    height: auto;
     opacity: 95.6%;
-    border-radius: 69px;
+    border-radius: 69px; /* Borde redondeado */
     background: linear-gradient(315deg, #5f3f65, #503555);
-    box-shadow:  -20px -20px 35px #432686,
-             20px 11px 35px #432686;
-}.mi-foto{
-    align-items: center;
+    box-shadow: -20px -20px 35px #432686, 20px 11px 35px #432686;
 }
 
 .contenedor-principal {
@@ -63,5 +61,59 @@ p{
     padding-right: var(--pading);
     padding-top: var(--pading);
     color: antiquewhite;
+    text-align: left;
 }
 
+
+/* Títulos de las columnas (Education, etc.) */
+.titulo-seccion {
+    color: var(--navbar-color); 
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Estilo de la tarjeta */
+.tarjeta-custom {
+    border: 2px solid #5f3f65; /* Borde morado sólido */
+    border-radius: 0; /* Bordes cuadrados como en la imagen de referencia */
+    background-color: white; /* Fondo blanco para contraste */
+    transition: transform 0.2s; /* Animación suave */
+}
+
+/* Efecto al pasar el mouse por encima */
+.tarjeta-custom:hover {
+    transform: translateY(-5px); /* Se levanta un poco */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Título dentro de la tarjeta */
+.tarjeta-custom .card-title {
+    color: #432686;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Subtítulo y textos */
+.tarjeta-custom .card-subtitle {
+    font-weight: bold;
+    color: #333 !important; /* Forzamos color oscuro */
+}
+
+.tarjeta-custom .card-text {
+    color: #666;
+    margin-bottom: 10px;
+    padding: 0; /* Quitamos el padding extra que tenías en los <p> generales */
+}
+
+/* Enlace "See more" */
+.btn-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn-link:hover {
+    color: #432686;
+}
