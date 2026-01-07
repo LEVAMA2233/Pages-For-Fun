@@ -35,19 +35,16 @@ footer {
 .hexagon {/*Diseño de cada hexagono*/
     display: flex;
     align-items: center;
-    height: 200px;
-    /* adjust to control the size  */
+    height: 250px;
     aspect-ratio: cos(30deg);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     width: 400px;
     height: 480px;
-    /* Un poco más alto para compensar las puntas */
-    background: linear-gradient(10deg, var(--gris), var(--rojo));
-    /* Degradado */
-    margin: 10px;
-    position: relative;
+    background: linear-gradient(300deg, var(--rojo),#ed333b);
+    margin: 5px;
+    position:relative;
 
-    /* Centrar el contenido */
+    /* Centrar y dar color al contenido */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -58,8 +55,62 @@ footer {
 
 .hexagon h3{
     font-family: var(--Tittle-and-subtitles);
+    font-size: xx-large;
 }
 
 .hexagon p{
     font-family: var(--Content);
+    font-size: large;
+}
+
+.hexagon:nth-child(3){/*nth-child es una pseudoclase que indica que el tercer hijo (en este caso porque pusimos el 3 dentro de paréntesis) de la clase hexagono lo vamos a mover hacia arriba(con una posición negativa en realidad "sube")*/
+    top: -120px;
+}.hexagon:nth-child(3):hover{
+    transform:translateY(15px);
+}
+
+.hexagon:hover{
+    transform: translateY(-15px);
+}
+
+
+@media screen and (max-width: 835px) {
+    
+    /* 1. Cambiamos el contenedor para que sea una columna vertical */
+    .panal-grid {
+        flex-direction: column;
+        width: 100%; /* Asegura que no se salga de la pantalla */
+    }
+
+    /* 2. Redimensionamos los hexágonos para que quepan en el celular */
+    .hexagon {
+        width: 300px; /* Un ancho seguro para móviles */
+        height: 346px; /* Ajustamos la altura proporcionalmente */
+        /* Quitamos el margin lateral de 5px para centrar mejor */
+        margin: 0 auto; 
+        
+        /* Hacemos que se "conecten" verticalmente con un margen negativo */
+        margin-top: -60px; 
+    }
+
+    /* 3. ¡IMPORTANTE! Reseteamos la regla del 3er hijo */
+    /* Como ahora están en columna, ya no necesitamos subir el tercero específicamente */
+    .hexagon:nth-child(3) {
+        top: 0; /* Quitamos el -120px que tenías */
+    }
+
+    /* 4. El primer hexágono no debe tener margen negativo arriba */
+    .hexagon:first-child {
+        margin-top: 0;
+    }
+
+    /* 5. Ajustar el tamaño del texto */
+    /* Como el hexágono es más chico, reducimos la letra para que no se salga */
+    .hexagon h3 {
+        font-size: 1.2rem;
+    }
+    .hexagon p {
+        font-size: 0.9rem;
+        padding: 0 15px; /* Un poco de aire a los lados */
+    }
 }
