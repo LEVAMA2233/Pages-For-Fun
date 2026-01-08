@@ -1,4 +1,7 @@
-:root{
+/*La forma del hexagono: fue fusilada de: https://css-shape.com/ hay otro tipo de figuras en este sitio*/
+/*Para aprender como modificar los contenedores flex en: https://www.w3schools.com/css/css3_flexbox_container.asp*/
+
+:root{/*Variables fusiladas de la identidad visual*/
     --rojo:#c91f13;
     --gris:#D9D9D9;
     --blanquino:#f5f3ec;
@@ -9,6 +12,15 @@
 header {
     text-align: center;
 }
+
+.navbar{
+    background-color: black;
+ }.navbar-brand{
+    color:var(--blanquino);
+ }.nav-link{
+    color:var(--blanquino);
+ }
+ 
 
 body {
     text-align: center;
